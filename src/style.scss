@@ -1,10 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$water-blue : #e7f4ff;
+$car-blue : #37a3f9;
+$dark-blue : #043e69;
+$poppins-font : 'Poppins', sans-serif;
+$raleway-font : 'Raleway', sans-serif;
+
+
 * {
-    background-color: black;
+    margin: 0;
+    padding: 0;   
 }
 
-.title {
+.stats-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 0px 40px;
+
+    .stat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 16px;
+        height: 125px;
+        width: 175px;
+        background-color: $water-blue;
+        border-radius: 25px;
+
+        h1 {
+            font-size:x-large;
+            font-weight: bolder;
+            font-family: $poppins-font;
+            color: $car-blue;
+        }
+        p {
+            font-family: $raleway-font;
+            font-weight: bold;
+            color: $dark-blue;
+        }
+    }
+}
+
+#service-secn {
     height: 100%;
-    font-size: xx-large;
-    font-weight: bolder;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    gap: 0px 80px;
+    font-family: $raleway-font;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .service-text {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+
+        .service-heading {
+            #tag {
+                color: $car-blue;  
+                font-weight: 500;
+            }
+            h1 {
+                font-weight:900;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                color: $dark-blue;
+                font-size:xx-large;
+            }
+            p {
+                font-weight: 500;
+                color: $dark-blue;
+            }
+        }
+
+        .grid-container {
+            display: grid; 
+            grid-template-columns: repeat(2, minmax(0, 1fr)); 
+            gap: 0px 80px;
+            padding: 0px 20px;
+
+            .serv {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                margin-top: 20px;
+
+                h2 {
+                    font-size: large;
+                }
+
+                p {
+                    font-size: small;
+                    margin-top: 10px;
+                }
+
+                img {
+                    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+                    border-radius: 8px;    
+                }
+            }
+        }
+
+        
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .stats-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #service-secn {
+        #car {
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    #service-secn {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+
+        #car {
+            height: 650px;
+        }
+
+        .service-text {
+            width: 100%;
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    #service-secn {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        #car {
+            height: 350px;
+        }
+
+        .service-text {
+            .grid-container {
+                display: inline;
+            }
+        }
+        
+    }
 }

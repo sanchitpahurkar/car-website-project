@@ -1,0 +1,34 @@
+.stats-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 0px 40px;
+
+    .stat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 16px;
+        height: 125px;
+        width: 175px;
+        background-color: $water-blue;
+        border-radius: 25px;
+
+        h1 {
+            font-size: x-large;
+            font-weight: bolder;
+            font-family: $poppins-font;
+            color: $car-blue;
+        }
+
+        p {
+            font-family: $raleway-font;
+            font-weight: bold;
+            color: $dark-blue;
+        }
+    }
+}

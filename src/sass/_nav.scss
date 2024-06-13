@@ -13,37 +13,49 @@ nav{
             justify-items: center;
             text-align: center;
         }
-
+        .logo-text{
+            padding-top: 10px;
+            @include md{
+                margin-top: -10px;
+            }
+        }
         .logo-car {
+            font-size: large;
+            @include md{
             font-size: xx-large;
+
+            }
         }
 
         .logo-rental {
             font-weight: 500;
-            font-size: large;
+                font-size: small;
+            @include md{
+                font-weight: 500;
+                font-size: medium;
+            }
         }
 
         .nav-link{
-            @include md{
-                position: static;
-                min-height: fit-content;
-                width: auto;
-            }
-
             display: flex;
-            justify-items: center;
-            padding: 0 10px;
+            padding: 20px 10px;
             position: absolute;
+            justify-items: center;
             background-color: white;
             min-height: 60vh;
             left: 0%;
             top: -100%;
             width: 100%;
             transition: 500ms;
+            @include md{
+                position: static;
+                min-height: fit-content;
+                width: auto;
+            }
+
 
             ul{
                 display: flex;
-                
                 @include md{
                     flex-direction: row;
                     justify-items: center;
@@ -52,6 +64,14 @@ nav{
                 flex-direction: column;
                 gap: 4vw;
                 font-weight: bold;
+            }
+        }
+        .hamburger{
+            font-size: xx-large;
+            cursor: pointer;
+            padding-left: 8px;
+            @include md{
+                visibility: hidden;
             }
         }
     }

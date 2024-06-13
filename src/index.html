@@ -8,45 +8,48 @@
 </head>
 <body>
     <!-- nav starts -->
-     <nav>
-            <div  class="navbar">
-                <!--Logo-->
-                <div class="logo">
-                    <div>
-                        <img src="media/logo.png" width="70px" alt="logo">
-                    </div>
-                    <div>
-                        <p><h1 class="logo-car">CAR</h1><p class="logo-rental">Rental</p></p>
-                    </div>
+
+    <nav>
+        <div class="navbar">
+            <!--Logo-->
+            <div class="logo">
+                <div>
+                    <img src="media/logo.png" width="70px" alt="logo">
                 </div>
-                <!--Nav Options-->
-                <div
-                    class="nav-link duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-7">
-                        <li><a href="#" class="font-semibold">Home</a></li>
-                        <li><a href="#" class="font-semibold">How it Works</a></li>
-                        <li><a href="#" class="font-semibold">Car</a></li>
-                        <li><a href="#" class="font-semibold">Testemonials</a></li>
-                        <li><a href="#" class="font-semibold">Update</a></li>
-                        <li><a href="#" class="font-semibold">contact</a></li>
-                        <li><a href="#" class="font-semibold">FAQS</a></li>
-                    
-                    </ul>
-                </div>
-                <!--Login/SignUp-->
-                <div class="flex items-center">
-                    <!--SignIN-->
-                    <div>
-                        <button class="px-5 py-2 font-semibold">Sign in</button>
-                    </div>
-                    <!--LogIn-->
-                    <div>
-                        <button class="bg-dark-blue text-white px-5 py-2 rounded-[5px] font-semibold">Log in</button>
-                    </div>
-                    <ion-icon name="menu" onclick="Hamburger(this)" class="text-3xl cursor-pointer pl-[8px] md:hidden"></ion-icon>
+                <div class="logo-text">
+                    <p>
+                    <h1 class="logo-car">CAR</h1>
+                    <p class="logo-rental">Rental</p>
+                    </p>
                 </div>
             </div>
-        </nav>
+            <!--Nav Options-->
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" style="min-width: 500px;">How it Works</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">Testemonials</a></li>
+                    <li><a href="#">Update</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">FAQS</a></li>
+    
+                </ul>
+            </div>
+            <!--Login/SignUp-->
+            <div class="log-sign">
+                <!--SignIN-->
+                <div class="signIn">
+                    <button class="px-5 py-2 font-semibold">Sign in</button>
+                </div>
+                <!--LogIn-->
+                <div class="login">
+                    <button class="bg-dark-blue text-white px-5 py-2 rounded-[5px] font-semibold">Log in</button>
+                </div>
+                <ion-icon name="menu" onclick="Hamburger(this)" class="hamburger"></ion-icon>
+            </div>
+        </div>
+    </nav>
     <!-- nav ends -->
 
 
@@ -171,5 +174,10 @@
         </div>
     </section>
     <!-- service section ends -->
+
+    <!--Hamburger icon-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

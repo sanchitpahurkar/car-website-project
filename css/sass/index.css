@@ -4,6 +4,13 @@
   margin: 0;
   padding: 0;
 }
+* a {
+  text-decoration: none;
+  color: black;
+}
+* ul {
+  list-style-type: none;
+}
 
 .stats-container {
   height: auto;
@@ -136,5 +143,136 @@
   }
   #service-secn .service-text .grid-container {
     display: inline;
+  }
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  width: 92%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+nav .navbar .logo {
+  display: flex;
+  justify-items: center;
+  text-align: center;
+}
+nav .navbar .logo-text {
+  padding-top: 10px;
+}
+@media (min-width: 720px) {
+  nav .navbar .logo-text {
+    margin-top: -10px;
+  }
+}
+nav .navbar .logo-car {
+  font-size: large;
+}
+@media (min-width: 720px) {
+  nav .navbar .logo-car {
+    font-size: xx-large;
+  }
+}
+nav .navbar .logo-rental {
+  font-weight: 500;
+  font-size: small;
+}
+@media (min-width: 720px) {
+  nav .navbar .logo-rental {
+    font-weight: 500;
+    font-size: medium;
+  }
+}
+nav .navbar .nav-link {
+  display: flex;
+  padding: 20px 10px;
+  position: absolute;
+  justify-items: center;
+  background-color: white;
+  min-height: 60vh;
+  left: 0%;
+  top: -100%;
+  width: 100%;
+  transition: 500ms;
+}
+@media (min-width: 720px) {
+  nav .navbar .nav-link {
+    position: static;
+    min-height: fit-content;
+    width: auto;
+  }
+}
+nav .navbar .nav-link ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  font-weight: bold;
+}
+@media (min-width: 720px) {
+  nav .navbar .nav-link ul {
+    flex-direction: row;
+    justify-items: center;
+    gap: 4vh;
+  }
+}
+nav .navbar .hamburger {
+  font-size: xx-large;
+  cursor: pointer;
+  padding-left: 8px;
+}
+@media (min-width: 720px) {
+  nav .navbar .hamburger {
+    visibility: hidden;
+  }
+}
+
+.log-sign {
+  display: flex;
+  justify-items: center;
+  padding: 15px 0px;
+  gap: 2vh;
+}
+.log-sign .signIn button {
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  min-width: 85px;
+}
+@media (min-width: 720px) {
+  .log-sign .signIn button {
+    font-size: small;
+  }
+}
+@media (min-width: 960px) {
+  .log-sign .signIn button {
+    font-size: medium;
+  }
+}
+.log-sign .login button {
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  min-width: 85px;
+  background-color: #043e69;
+  color: white;
+}
+@media (min-width: 720px) {
+  .log-sign .login button {
+    font-size: small;
+  }
+}
+@media (min-width: 960px) {
+  .log-sign .login button {
+    font-size: medium;
   }
 }

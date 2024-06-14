@@ -48,6 +48,7 @@ $raleway-font : 'Raleway', sans-serif;
         display: flex;
         flex-direction: column;
         margin-top: 3em;
+        
     }
     &__top{
         display: flex;
@@ -55,6 +56,7 @@ $raleway-font : 'Raleway', sans-serif;
         height: 100%;
         width: 100%;
         border-bottom: 4px solid $car-blue;
+        box-shadow: 1px 1px -10px $car-blue;
     }
     &__bottom{
         display:flex;
@@ -67,6 +69,7 @@ $raleway-font : 'Raleway', sans-serif;
         flex-direction: column;
         justify-content: end;
         align-items: center;
+        
     }
     .bottomDiv{
         justify-content: start;
@@ -94,6 +97,7 @@ $raleway-font : 'Raleway', sans-serif;
         align-items: center;
         justify-content: center;
         color: $car-blue;
+        box-shadow: 1px 1px 10px $car-blue;
     }
     h2{
         color: $dark-blue;
@@ -103,11 +107,12 @@ $raleway-font : 'Raleway', sans-serif;
     }
     .vl{
         width: 6px;
-        height:20vh;
+        height:12vh;
         background: $car-blue;
         border-top: 20px;
         border-bottom: 20px;
         margin-bottom: 0;
+        box-shadow: 1px 1px 10px $car-blue;
     }
     .how{
         color: $car-blue;

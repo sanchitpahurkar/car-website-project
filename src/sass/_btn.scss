@@ -1,5 +1,5 @@
 @mixin btn {
-    padding: 0.5rem 1.25rem;
+    padding: 1rem 1.7rem;
     font-weight: bold;
     color: black;
     border-radius: 5px;
@@ -34,10 +34,52 @@
     .login {
         button {
             @include btn;
-            background-color: $dark-blue;
+            background-color: $btn-blue;
             color: white;
 
         }
     }
 
+}
+
+
+.home-btns {
+    display: flex;
+    justify-items: center;
+    padding: 15px 0px;
+    gap: 2vh;
+
+    .book {
+        position: relative;
+        button {
+            @include btn;
+            background-color: $btn-blue;
+            color: white;
+            ion-icon {
+                    position: absolute;
+                    right: 3%;
+                    top: 30%;
+                    font-weight: bold;
+                    font-size: 20px;
+            
+                }
+        }
+    }
+
+    .learn {
+        position: relative;
+        button {
+            @include btn;
+            color: white;
+            background-color: black;
+            ion-icon{
+                position: absolute;
+                right: 3%;
+                top: 30%;
+                font-weight:bold;
+                font-size: 20px;
+                
+            }
+        }
+    }
 }

@@ -1,0 +1,58 @@
+.home {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    justify-content: space-between;
+
+}
+
+//Left section
+.left-text {
+    padding: 20px 0px;
+}
+
+.left-section {
+    p {
+        font-weight: bold;
+    }
+
+    span {
+        color: red;
+    }
+
+    .first-text {
+        font-size: x-large;
+    }
+
+    .second-text {
+        font-size: 50px;
+    }
+
+    .third-text {
+        font-size: large;
+        font-weight: 100;
+    }
+}
+
+//right section
+.right-section {
+    position: relative;
+
+    img {
+        position: absolute;
+        right: 100px;
+        bottom: -100px;
+    }
+
+    .home-car-bg {
+        position: absolute;
+        width: 700px;
+        height: 700px;
+        background-color: blue;
+        top: -400px;
+        right: -400px;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+}

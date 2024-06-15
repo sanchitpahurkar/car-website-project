@@ -1,0 +1,70 @@
+@import 'responsiveUtilities';
+@import 'variables';
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    overflow: hidden;
+    z-index: 1;
+
+    @include breakpoint($bp: 1200px) {
+        flex-direction: row;
+    }
+
+    flex-direction: column;
+
+    //Left section
+    .left-text {
+        padding: 20px 0px;
+    }
+
+    .left-section {
+        p {
+            font-weight: bold;
+        }
+
+        span {
+            color: $car-blue;
+        }
+
+        .first-text {
+            font-size: x-large;
+        }
+
+        .second-text {
+            font-size: 50px;
+        }
+
+        .third-text {
+            font-size: large;
+            font-weight: 100;
+        }
+    }
+
+    //right section
+    .right-section {
+        img {
+            width: 95%;
+            z-index: 1;
+        }
+
+        .home-car-bg {
+            z-index: -1;
+            width: 700px;
+            height: 700px;
+            background: $car-blue;
+            position: absolute;
+            overflow: hidden;
+            top: 70px;
+            right: -400px;
+            transform: rotate(45deg);
+            @include max-xl{
+                display: none;
+            }
+        }
+    }
+}

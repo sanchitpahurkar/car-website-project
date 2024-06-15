@@ -1,8 +1,14 @@
 $water-blue : #e7f4ff;
 $car-blue : #37a3f9;
 $dark-blue : #043e69;
+$btn-blue: #45AFDD;
 $rent-gray: #6c757d;
 $poppins-font : 'Poppins',
 sans-serif;
 $raleway-font : 'Raleway',
 sans-serif;
+
+@mixin heading {
+    font-family: $poppins-font;
+    font-weight: bold;
+}

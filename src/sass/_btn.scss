@@ -1,0 +1,86 @@
+@mixin btn {
+    padding: 1rem 1.7rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    min-width: 100px;
+
+    @include md {
+        font-size: small;
+    }
+
+    @include lg {
+        font-size: medium;
+    }
+
+}
+
+
+.log-sign {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 2vh;
+
+    .signIn {
+        button {
+            @include btn;
+        }
+    }
+
+    .login {
+        button {
+            @include btn;
+            background-color: $btn-blue;
+            color: white;
+
+        }
+    }
+
+}
+
+
+.home-btns {
+    display: flex;
+    justify-items: center;
+    padding: 15px 0px;
+    gap: 2vh;
+        z-index: -1;
+    .book {
+        position: relative;
+        button {
+            @include btn;
+            background-color: $btn-blue;
+            color: white;
+            ion-icon {
+                    position: absolute;
+                    right: 3%;
+                    top: 30%;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-right: 10px;
+            
+                }
+        }
+    }
+
+    .learn {
+        position: relative;
+        button {
+            @include btn;
+            color: white;
+            background-color: black;
+            ion-icon{
+                position: absolute;
+                right: 3%;
+                top: 30%;
+                font-weight:bold;
+                font-size: 20px;
+                
+            }
+        }
+    }
+}

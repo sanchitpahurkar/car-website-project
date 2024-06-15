@@ -8,12 +8,81 @@
     <link rel="shortcut icon" href="./media/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="/css/sass/index.css">
 </head>
+
 <body>
     <!-- nav starts -->
+
+    <nav>
+        <div class="navbar">
+            <!--Logo-->
+            <div class="logo">
+                <div>
+                    <img src="media/logo.png" width="70px" alt="logo">
+                </div>
+                <div class="logo-text">
+                    <p>
+                    <h1 class="logo-car">CAR Rental</h1>
+                    </p>
+                </div>
+            </div>
+            <!--Nav Options-->
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" style="min-width: 500px;">How it Works</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">Testemonials</a></li>
+                    <li><a href="#">Update</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">FAQS</a></li>
+
+                </ul>
+            </div>
+            <!--Login/SignUp-->
+            <div class="log-sign">
+                <!--SignIN-->
+                <div class="signIn">
+                    <button>Sign in</button>
+                </div>
+                <!--LogIn-->
+                <div class="login">
+                    <button>Log in</button>
+                </div>
+                <ion-icon name="menu" onclick="Hamburger(this)" class="hamburger"></ion-icon>
+            </div>
+        </div>
+    </nav>
     <!-- nav ends -->
 
 
     <!-- landing page starts -->
+    <div class="home">
+        <div class="left-section">
+            <div class="left-text">
+                <p class="first-text">Experience the Open Road</p>
+                <p class="second-text">Save <span>big</span> with our <br>car rental</p>
+                <p class="third-text">Rent the car of your dream. Unbeatable prices. Unlimited Miles. <br> flexible pick-up options and
+                    much
+                    more.</p>
+            </div>
+
+            <div class="home-btns">
+                <!--Book Ride-->
+                <div class="book">
+                    <button>Book Now &nbsp;&nbsp; <ion-icon name="checkmark-done-circle-outline"></ion-icon></button>
+                </div>
+                <!--Learn More-->
+                <div class="learn">
+                    <button>Learn More &nbsp; <ion-icon name="chevron-forward-outline"></ion-icon></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <img src="/src/media/home-car.png" alt="">
+            <div class="home-car-bg"></div>
+        </div>
+    </div>
     <!-- landing page ends -->
 
 
@@ -152,7 +221,10 @@
             <div class="service-heading">
                 <p id="tag">Service</p>
                 <h1>Best Service</h1>
-                <p>Experience unparalleled excellence with our top-tier car services. Our skilled technicians use cutting-edge technology to ensure your vehicle performs at its peak. From routine maintenance to complex repairs, we provide swift, reliable, and affordable solutions. Trust us for the best service that guarantees safety, efficiency, and longevity for your car.</p>
+                <p>Experience unparalleled excellence with our top-tier car services. Our skilled technicians use
+                    cutting-edge technology to ensure your vehicle performs at its peak. From routine maintenance to
+                    complex repairs, we provide swift, reliable, and affordable solutions. Trust us for the best service
+                    that guarantees safety, efficiency, and longevity for your car.</p>
             </div>
             <!-- services -->
             <div class="grid-container">
@@ -163,7 +235,8 @@
                     <!-- description -->
                     <div>
                         <h2>Location</h2>
-                        <p>Conveniently located downtown, our service center ensures easy access and prompt, professional care for all your car needs.</p>
+                        <p>Conveniently located downtown, our service center ensures easy access and prompt,
+                            professional care for all your car needs.</p>
                     </div>
                 </div>
 
@@ -174,7 +247,8 @@
                     <!-- description -->
                     <div>
                         <h2>Price</h2>
-                        <p>Enjoy premium car services at unbeatable prices. We offer competitive rates without compromising on quality and expertise.</p>
+                        <p>Enjoy premium car services at unbeatable prices. We offer competitive rates without
+                            compromising on quality and expertise.</p>
                     </div>
                 </div>
 
@@ -185,7 +259,8 @@
                     <!-- description -->
                     <div>
                         <h2>Variety</h2>
-                        <p>Explore a comprehensive range of services tailored to meet all your car's needs, from maintenance to repairs and upgrades.</p>
+                        <p>Explore a comprehensive range of services tailored to meet all your car's needs, from
+                            maintenance to repairs and upgrades.</p>
                     </div>
                 </div>
 
@@ -196,7 +271,8 @@
                     <!-- description -->
                     <div>
                         <h2>24/7 Support</h2>
-                        <p>Count on our round-the-clock support to address any car concerns promptly, ensuring peace of mind and uninterrupted driving experiences.</p>
+                        <p>Count on our round-the-clock support to address any car concerns promptly, ensuring peace of
+                            mind and uninterrupted driving experiences.</p>
                     </div>
                 </div>
 
@@ -207,7 +283,8 @@
                     <!-- description -->
                     <div>
                         <h2>Promos every day</h2>
-                        <p>Take advantage of daily promos at our service center, offering unbeatable deals on maintenance, repairs, and other car services.</p>
+                        <p>Take advantage of daily promos at our service center, offering unbeatable deals on
+                            maintenance, repairs, and other car services.</p>
                     </div>
                 </div>
 
@@ -218,12 +295,19 @@
                     <!-- description -->
                     <div>
                         <h2>Quality</h2>
-                        <p>Experience unmatched quality in every aspect of our service, ensuring your car receives the care and attention it deserves.</p>
+                        <p>Experience unmatched quality in every aspect of our service, ensuring your car receives the
+                            care and attention it deserves.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- service section ends -->
+
+    <!--Hamburger icon-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

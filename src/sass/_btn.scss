@@ -6,7 +6,7 @@
     border: none;
     background-color: white;
     cursor: pointer;
-    min-width: 85px;
+    min-width: 100px;
 
     @include md {
         font-size: small;
@@ -22,7 +22,7 @@
 .log-sign {
     display: flex;
     justify-items: center;
-    padding: 15px 0px;
+    align-items: center;
     gap: 2vh;
 
     .signIn {
@@ -48,7 +48,7 @@
     justify-items: center;
     padding: 15px 0px;
     gap: 2vh;
-
+        z-index: -1;
     .book {
         position: relative;
         button {
@@ -61,6 +61,7 @@
                     top: 30%;
                     font-weight: bold;
                     font-size: 20px;
+                    margin-right: 10px;
             
                 }
         }

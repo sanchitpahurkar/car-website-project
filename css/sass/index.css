@@ -149,7 +149,9 @@ nav .navbar {
   display: flex;
   justify-content: space-between;
   justify-items: center;
-  width: 92%;
+  width: 90%;
+  z-index: 1;
+  background: transparent;
   margin: auto;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -158,6 +160,7 @@ nav .navbar .logo {
   display: flex;
   justify-items: center;
   text-align: center;
+  align-items: center;
 }
 nav .navbar .logo-text {
   padding-top: 10px;
@@ -173,16 +176,6 @@ nav .navbar .logo-car {
 @media (min-width: 720px) {
   nav .navbar .logo-car {
     font-size: xx-large;
-  }
-}
-nav .navbar .logo-rental {
-  font-weight: 500;
-  font-size: small;
-}
-@media (min-width: 720px) {
-  nav .navbar .logo-rental {
-    font-weight: 500;
-    font-size: medium;
   }
 }
 nav .navbar .nav-link {
@@ -231,7 +224,7 @@ nav .navbar .hamburger {
 .log-sign {
   display: flex;
   justify-items: center;
-  padding: 15px 0px;
+  align-items: center;
   gap: 2vh;
 }
 .log-sign .signIn button {
@@ -242,7 +235,7 @@ nav .navbar .hamburger {
   border: none;
   background-color: white;
   cursor: pointer;
-  min-width: 85px;
+  min-width: 100px;
 }
 @media (min-width: 720px) {
   .log-sign .signIn button {
@@ -262,7 +255,7 @@ nav .navbar .hamburger {
   border: none;
   background-color: white;
   cursor: pointer;
-  min-width: 85px;
+  min-width: 100px;
   background-color: #45AFDD;
   color: white;
 }
@@ -282,6 +275,7 @@ nav .navbar .hamburger {
   justify-items: center;
   padding: 15px 0px;
   gap: 2vh;
+  z-index: -1;
 }
 .home-btns .book {
   position: relative;
@@ -294,7 +288,7 @@ nav .navbar .hamburger {
   border: none;
   background-color: white;
   cursor: pointer;
-  min-width: 85px;
+  min-width: 100px;
   background-color: #45AFDD;
   color: white;
 }
@@ -314,6 +308,7 @@ nav .navbar .hamburger {
   top: 30%;
   font-weight: bold;
   font-size: 20px;
+  margin-right: 10px;
 }
 .home-btns .learn {
   position: relative;
@@ -326,7 +321,7 @@ nav .navbar .hamburger {
   border: none;
   background-color: white;
   cursor: pointer;
-  min-width: 85px;
+  min-width: 100px;
   color: white;
   background-color: black;
 }
@@ -349,49 +344,57 @@ nav .navbar .hamburger {
 }
 
 .home {
-  height: 85vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
   display: flex;
   align-items: center;
   padding-left: 10%;
-  justify-content: space-between;
+  overflow: hidden;
+  z-index: 1;
+  flex-direction: column;
 }
-
-.left-text {
+@media (min-width: 1200px) {
+  .home {
+    flex-direction: row;
+  }
+}
+.home .left-text {
   padding: 20px 0px;
 }
-
-.left-section p {
+.home .left-section p {
   font-weight: bold;
 }
-.left-section span {
-  color: red;
+.home .left-section span {
+  color: #37a3f9;
 }
-.left-section .first-text {
+.home .left-section .first-text {
   font-size: x-large;
 }
-.left-section .second-text {
+.home .left-section .second-text {
   font-size: 50px;
 }
-.left-section .third-text {
+.home .left-section .third-text {
   font-size: large;
   font-weight: 100;
 }
-
-.right-section {
-  position: relative;
+.home .right-section img {
+  width: 95%;
+  z-index: 1;
 }
-.right-section img {
-  position: absolute;
-  right: 100px;
-  bottom: -100px;
-}
-.right-section .home-car-bg {
-  position: absolute;
+.home .right-section .home-car-bg {
+  z-index: -1;
   width: 700px;
   height: 700px;
-  background-color: blue;
-  top: -400px;
+  background: #37a3f9;
+  position: absolute;
+  overflow: hidden;
+  top: 70px;
   right: -400px;
   transform: rotate(45deg);
-  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .home .right-section .home-car-bg {
+    display: none;
+  }
 }

@@ -1,0 +1,106 @@
+
+// rent section css starts
+
+.rent{
+    max-width: 100%;
+    max-height: auto;
+    // padding-top: 1em;
+    // padding-bottom: 1em;
+
+    &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    i{
+        font-size: 5vw;
+    }
+    p{
+        color: $rent-gray;
+        font-family: $raleway-font;
+    }
+    h1{
+        color: #043e69;
+        font-family: $poppins-font;
+        font-size: 2.5em;
+        margin-top: 0;
+    }
+    &__main{
+        // border: 4px solid black;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        
+    }
+    &__top{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border-bottom: 4px solid $car-blue;
+        box-shadow: 1px 1px -10px $car-blue;
+    }
+    &__bottom{
+        display:flex;
+        justify-content: center;
+    }
+    .topDiv{
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        
+    }
+    .bottomDiv{
+        justify-content: start;
+    }
+    .bottom1{  
+        width: 100%;
+       // margin-bottom: 1.0em;
+    }
+    
+    .top1-main{
+        width: 50%;
+        // border: 4px solid black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__point{
+        border: 4px solid $car-blue;
+        width: 60%;
+        border-radius: 20px;
+        height: 7vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $car-blue;
+        box-shadow: 1px 1px 10px $car-blue;
+    }
+    h2{
+        color: $dark-blue;
+        
+        font-weight: bolder;
+        font-family: $poppins-font;
+    }
+    .vl{
+        width: 6px;
+        height:12vh;
+        background: $car-blue;
+        border-top: 20px;
+        border-bottom: 20px;
+        margin-bottom: 0;
+        box-shadow: 1px 1px 10px $car-blue;
+    }
+    .how{
+        color: $car-blue;
+    }
+    
+}
+// rent section css ends

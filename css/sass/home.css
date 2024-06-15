@@ -1,0 +1,55 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  overflow: hidden;
+  z-index: 1;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .home {
+    flex-direction: row;
+  }
+}
+.home .left-text {
+  padding: 20px 0px;
+}
+.home .left-section p {
+  font-weight: bold;
+}
+.home .left-section span {
+  color: #37a3f9;
+}
+.home .left-section .first-text {
+  font-size: x-large;
+}
+.home .left-section .second-text {
+  font-size: 50px;
+}
+.home .left-section .third-text {
+  font-size: large;
+  font-weight: 100;
+}
+.home .right-section img {
+  width: 95%;
+  z-index: 1;
+}
+.home .right-section .home-car-bg {
+  z-index: -1;
+  width: 700px;
+  height: 700px;
+  background: #37a3f9;
+  position: absolute;
+  overflow: hidden;
+  top: 70px;
+  right: -400px;
+  transform: rotate(45deg);
+}
+@media (max-width: 1200px) {
+  .home .right-section .home-car-bg {
+    display: none;
+  }
+}

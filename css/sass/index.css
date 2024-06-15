@@ -149,7 +149,9 @@ nav .navbar {
   display: flex;
   justify-content: space-between;
   justify-items: center;
-  width: 92%;
+  width: 90%;
+  z-index: 1;
+  background: transparent;
   margin: auto;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -158,6 +160,7 @@ nav .navbar .logo {
   display: flex;
   justify-items: center;
   text-align: center;
+  align-items: center;
 }
 nav .navbar .logo-text {
   padding-top: 10px;
@@ -173,16 +176,6 @@ nav .navbar .logo-car {
 @media (min-width: 720px) {
   nav .navbar .logo-car {
     font-size: xx-large;
-  }
-}
-nav .navbar .logo-rental {
-  font-weight: 500;
-  font-size: small;
-}
-@media (min-width: 720px) {
-  nav .navbar .logo-rental {
-    font-weight: 500;
-    font-size: medium;
   }
 }
 nav .navbar .nav-link {
@@ -231,18 +224,18 @@ nav .navbar .hamburger {
 .log-sign {
   display: flex;
   justify-items: center;
-  padding: 15px 0px;
+  align-items: center;
   gap: 2vh;
 }
 .log-sign .signIn button {
-  padding: 0.5rem 1.25rem;
+  padding: 1rem 1.7rem;
   font-weight: bold;
   color: black;
   border-radius: 5px;
   border: none;
   background-color: white;
   cursor: pointer;
-  min-width: 85px;
+  min-width: 100px;
 }
 @media (min-width: 720px) {
   .log-sign .signIn button {
@@ -255,15 +248,15 @@ nav .navbar .hamburger {
   }
 }
 .log-sign .login button {
-  padding: 0.5rem 1.25rem;
+  padding: 1rem 1.7rem;
   font-weight: bold;
   color: black;
   border-radius: 5px;
   border: none;
   background-color: white;
   cursor: pointer;
-  min-width: 85px;
-  background-color: #043e69;
+  min-width: 100px;
+  background-color: #45AFDD;
   color: white;
 }
 @media (min-width: 720px) {
@@ -274,5 +267,134 @@ nav .navbar .hamburger {
 @media (min-width: 960px) {
   .log-sign .login button {
     font-size: medium;
+  }
+}
+
+.home-btns {
+  display: flex;
+  justify-items: center;
+  padding: 15px 0px;
+  gap: 2vh;
+  z-index: -1;
+}
+.home-btns .book {
+  position: relative;
+}
+.home-btns .book button {
+  padding: 1rem 1.7rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  min-width: 100px;
+  background-color: #45AFDD;
+  color: white;
+}
+@media (min-width: 720px) {
+  .home-btns .book button {
+    font-size: small;
+  }
+}
+@media (min-width: 960px) {
+  .home-btns .book button {
+    font-size: medium;
+  }
+}
+.home-btns .book button ion-icon {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.home-btns .learn {
+  position: relative;
+}
+.home-btns .learn button {
+  padding: 1rem 1.7rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  min-width: 100px;
+  color: white;
+  background-color: black;
+}
+@media (min-width: 720px) {
+  .home-btns .learn button {
+    font-size: small;
+  }
+}
+@media (min-width: 960px) {
+  .home-btns .learn button {
+    font-size: medium;
+  }
+}
+.home-btns .learn button ion-icon {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  overflow: hidden;
+  z-index: 1;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .home {
+    flex-direction: row;
+  }
+}
+.home .left-text {
+  padding: 20px 0px;
+}
+.home .left-section p {
+  font-weight: bold;
+}
+.home .left-section span {
+  color: #37a3f9;
+}
+.home .left-section .first-text {
+  font-size: x-large;
+}
+.home .left-section .second-text {
+  font-size: 50px;
+}
+.home .left-section .third-text {
+  font-size: large;
+  font-weight: 100;
+}
+.home .right-section img {
+  width: 95%;
+  z-index: 1;
+}
+.home .right-section .home-car-bg {
+  z-index: -1;
+  width: 700px;
+  height: 700px;
+  background: #37a3f9;
+  position: absolute;
+  overflow: hidden;
+  top: 70px;
+  right: -400px;
+  transform: rotate(45deg);
+}
+@media (max-width: 1200px) {
+  .home .right-section .home-car-bg {
+    display: none;
   }
 }

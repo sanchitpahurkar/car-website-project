@@ -8,3 +8,10 @@
 @import 'btn';
 @import 'home';
 @import 'rent';
+@import 'carBooking';
+
+body {
+    background-image: url($bg-pattern);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

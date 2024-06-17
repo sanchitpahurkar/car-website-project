@@ -1,0 +1,135 @@
+.search-container {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: $raleway-font;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), -1px -1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: $car-blue;
+            font-family: $poppins-font;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 500;
+            color: $dark-blue;
+            font-family: $raleway-font;
+        }
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 10px;
+
+            .rating-div {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                
+                p {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .input-sec {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), -1px -1px 3px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+
+        .form-col {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                color: $dark-blue;
+                font-family: $raleway-font;                
+            }
+        
+
+            .text-input {
+                width: 300px;
+                height: 25px;
+                margin-bottom: 15px;
+                border: 1px $car-blue solid;
+                border-radius: 5px;
+                margin-top: 3px;
+                padding-left: 10px;
+            }
+
+            .text-input:focus {
+                border: 1px $car-blue solid;
+                outline: none;
+            }
+
+            .date-time {
+                display: flex;
+                flex-direction: row;
+                gap: 35px;
+                
+                .date {
+                    display: flex;
+                    flex-direction: column;
+
+                    .click-input {
+                        height: 25px;
+                        width: 125px;
+                        margin-top: 5px;
+                        border: 1px $car-blue solid;
+                        border-radius: 5px;
+                        padding-left: 10px;
+                    }
+
+                    .click-input:focus {
+                        border: 1px $car-blue solid;
+                        outline: none;
+                    }
+
+                    
+                    
+                }
+                .time {
+                    display: flex;
+                    flex-direction: column;
+
+                    .click-input {
+                        height: 25px;
+                        width: 125px;
+                        margin-top: 5px;
+                        border: 1px $car-blue solid;
+                        border-radius: 5px;
+                        padding-left: 10px;
+                    }
+
+                    .click-input:focus {
+                        border: 1px $car-blue solid;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

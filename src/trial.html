@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <style>
+        /* Basic styling */
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            display: none; /* Hide all products initially */
+        }
+
+        .product-category {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .product-category.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="filters">
+        <span class="product-category active" data-category="all">All</span>
+        <span class="product-category" data-category="electronics">Electronics</span>
+        <span class="product-category" data-category="books">Books</span>
+        <span class="product-category" data-category="clothing">Clothing</span>
+    </div>
+
+    <div class="product-list">
+        <div class="product" data-category="electronics">Product 1 - Electronics</div>
+        <div class="product" data-category="books">Product 2 - Books</div>
+        <div class="product" data-category="clothing">Product 3 - Clothing</div>
+        <div class="product" data-category="electronics">Product 4 - Electronics</div>
+        <div class="product" data-category="books">Product 5 - Books</div>
+    </div>
+
+    <script>
+        // JavaScript to handle filtering
+        document.addEventListener('DOMContentLoaded', function () {
+            const categories = document.querySelectorAll('.product-category');
+            const products = document.querySelectorAll('.product');
+
+            categories.forEach(category => {
+                category.addEventListener('click', function () {
+                    // Remove active class from all categories
+                    categories.forEach(cat => cat.classList.remove('active'));
+                    // Add active class to the clicked category
+                    this.classList.add('active');
+
+                    // Get the selected category
+                    const selectedCategory = this.getAttribute('data-category');
+
+                    // Show/Hide products based on the selected category
+                    products.forEach(product => {
+                        if (selectedCategory === 'all' || product.getAttribute('data-category') === selectedCategory) {
+                            product.style.display = 'block';
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Trigger click on the 'All' category to show all products on load
+            document.querySelector('.product-category[data-category="all"]').click();
+        });
+    </script>
+</body>
+</html>

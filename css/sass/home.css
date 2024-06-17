@@ -1,12 +1,13 @@
 .home {
   height: 100vh;
-  width: 100vw;
   background-color: transparent;
   display: flex;
   align-items: center;
   padding-left: 10%;
   overflow: hidden;
+  overflow-x: hidden;
   z-index: 1;
+  font-family: "Poppins", sans-serif;
   flex-direction: column;
 }
 @media (min-width: 1200px) {
@@ -32,6 +33,7 @@
 .home .left-section .third-text {
   font-size: large;
   font-weight: 100;
+  font-family: "Raleway", sans-serif;
 }
 .home .right-section img {
   width: 95%;
@@ -44,6 +46,7 @@
   background: #37a3f9;
   position: absolute;
   overflow: hidden;
+  overflow-x: hidden;
   top: 70px;
   right: -400px;
   transform: rotate(45deg);

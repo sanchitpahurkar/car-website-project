@@ -1,0 +1,67 @@
+@import 'responsiveUtilities';
+@import 'variables';
+
+.suggestion {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+    font-family: $raleway-font;
+    @include lg{
+        flex-direction: row;
+    }
+
+    .sug-left {
+        max-width: 75vw;
+        @include lg{
+            max-width: 40vw;
+        }
+        padding-right: 5%;
+        .sug-first {
+            color: $car-blue;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: $poppins-font;
+        }
+
+        .sug-second {
+            color: $dark-blue;
+            font-size: 2.8rem;
+            font-weight: bold;
+            font-family: $poppins-font;
+        }
+
+        .sug-third {
+            padding-bottom: 2%;
+            font-weight: 400;
+        }
+
+        .features {
+            .car-name {
+                font-family: $poppins-font;
+                color: #EA3C53;
+                font-weight: 500;
+                font-size: 1.3rem;
+            }
+
+            ul{
+                list-style-image: url('/src/media/check-mark.png');
+                padding-bottom: 10%;
+
+                li{
+                    padding: 3px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .sug-right{
+        img{
+           width: 95%;
+           height: 95%;
+        }
+    }
+}

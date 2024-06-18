@@ -12,98 +12,6 @@
   list-style-type: none;
 }
 
-.rent {
-  max-width: 100%;
-  max-height: auto;
-}
-.rent__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.rent i {
-  font-size: 5vw;
-}
-.rent p {
-  color: #6c757d;
-  font-family: "Raleway", sans-serif;
-}
-.rent h1 {
-  color: #043e69;
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5em;
-  margin-top: 0;
-}
-.rent__main {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  margin-top: 3em;
-}
-.rent__top {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  border-bottom: 4px solid #37a3f9;
-  box-shadow: 1px 1px -10px #37a3f9;
-}
-.rent__bottom {
-  display: flex;
-  justify-content: center;
-}
-.rent .topDiv {
-  width: 30%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-}
-.rent .bottomDiv {
-  justify-content: start;
-}
-.rent .bottom1 {
-  width: 100%;
-}
-.rent .top1-main {
-  width: 50%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.rent__point {
-  border: 4px solid #37a3f9;
-  width: 60%;
-  border-radius: 20px;
-  height: 7vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #37a3f9;
-  box-shadow: 1px 1px 10px #37a3f9;
-}
-.rent h2 {
-  color: #043e69;
-  font-weight: bolder;
-  font-family: "Poppins", sans-serif;
-}
-.rent .vl {
-  width: 6px;
-  height: 12vh;
-  background: #37a3f9;
-  border-top: 20px;
-  border-bottom: 20px;
-  margin-bottom: 0;
-  box-shadow: 1px 1px 10px #37a3f9;
-}
-.rent .how {
-  color: #37a3f9;
-}
-
 .stats-container {
   height: auto;
   display: flex;
@@ -438,13 +346,14 @@ nav .navbar .hamburger {
 
 .home {
   height: 100vh;
-  width: 100vw;
   background-color: transparent;
   display: flex;
   align-items: center;
   padding-left: 10%;
   overflow: hidden;
+  overflow-x: hidden;
   z-index: 1;
+  font-family: "Poppins", sans-serif;
   flex-direction: column;
 }
 @media (min-width: 1200px) {
@@ -470,6 +379,7 @@ nav .navbar .hamburger {
 .home .left-section .third-text {
   font-size: large;
   font-weight: 100;
+  font-family: "Raleway", sans-serif;
 }
 .home .right-section img {
   width: 95%;
@@ -482,6 +392,7 @@ nav .navbar .hamburger {
   background: #37a3f9;
   position: absolute;
   overflow: hidden;
+  overflow-x: hidden;
   top: 70px;
   right: -400px;
   transform: rotate(45deg);
@@ -490,4 +401,154 @@ nav .navbar .hamburger {
   .home .right-section .home-car-bg {
     display: none;
   }
+}
+
+.rent {
+  max-width: 100%;
+  max-height: auto;
+}
+.rent__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rent i {
+  font-size: 5vw;
+}
+.rent p {
+  color: #6c757d;
+  font-family: "Raleway", sans-serif;
+}
+.rent h1 {
+  color: #043e69;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+.rent__main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+.rent__top {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-bottom: 4px solid #37a3f9;
+  box-shadow: 1px 1px -10px #37a3f9;
+}
+.rent__bottom {
+  display: flex;
+  justify-content: center;
+}
+.rent .topDiv {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.rent .bottomDiv {
+  justify-content: start;
+}
+.rent .bottom1 {
+  width: 100%;
+}
+.rent .top1-main {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rent__point {
+  border: 4px solid #37a3f9;
+  width: 60%;
+  border-radius: 20px;
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #37a3f9;
+  box-shadow: 1px 1px 10px #37a3f9;
+}
+.rent h2 {
+  color: #043e69;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+.rent .vl {
+  width: 6px;
+  height: 12vh;
+  background: #37a3f9;
+  border-top: 20px;
+  border-bottom: 20px;
+  margin-bottom: 0;
+  box-shadow: 1px 1px 10px #37a3f9;
+}
+.rent .how {
+  color: #37a3f9;
+}
+
+.suggestion {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10%;
+  font-family: "Raleway", sans-serif;
+}
+@media (min-width: 960px) {
+  .suggestion {
+    flex-direction: row;
+  }
+}
+.suggestion .sug-left {
+  max-width: 75vw;
+  padding-right: 5%;
+}
+@media (min-width: 960px) {
+  .suggestion .sug-left {
+    max-width: 40vw;
+  }
+}
+.suggestion .sug-left .sug-first {
+  color: #37a3f9;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.suggestion .sug-left .sug-second {
+  color: #043e69;
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.suggestion .sug-left .sug-third {
+  padding-bottom: 2%;
+  font-weight: 400;
+}
+.suggestion .sug-left .features .car-name {
+  font-family: "Poppins", sans-serif;
+  color: #EA3C53;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.suggestion .sug-left .features ul {
+  list-style-image: url("/src/media/check-mark.png");
+  padding-bottom: 10%;
+}
+.suggestion .sug-left .features ul li {
+  padding: 3px;
+  font-weight: 400;
+}
+.suggestion .sug-right img {
+  width: 95%;
+  height: 95%;
 }

@@ -504,15 +504,16 @@ nav .navbar .hamburger {
   padding: 10%;
   font-family: "Raleway", sans-serif;
 }
-@media (min-width: 720px) {
+@media (min-width: 960px) {
   .suggestion {
     flex-direction: row;
   }
 }
 .suggestion .sug-left {
+  max-width: 75vw;
   padding-right: 5%;
 }
-@media (min-width: 720px) {
+@media (min-width: 960px) {
   .suggestion .sug-left {
     max-width: 40vw;
   }

@@ -9,12 +9,13 @@
     flex-direction: column;
     padding: 10%;
     font-family: $raleway-font;
-    @include md{
+    @include lg{
         flex-direction: row;
     }
 
     .sug-left {
-        @include md{
+        max-width: 75vw;
+        @include lg{
             max-width: 40vw;
         }
         padding-right: 5%;
